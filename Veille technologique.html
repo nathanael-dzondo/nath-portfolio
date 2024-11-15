@@ -10,6 +10,17 @@
         body {
             background-color: azure;
         }
+        button {
+                padding: 10px 15px;
+                background-color: rgb(100, 100, 100);
+                color: green;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: paleturquoise;
+            }
  </style>
 </head>
 <body>
@@ -25,21 +36,21 @@
     <p>Le meilleur moyens pour sécuriser est d'intégrer la sécurité dans un cycle de vie du développement d'une application (il faut penser à la sécurité lors de la création de l'application et lors des mis à jour de celle-ci).</p>
 
     <h3>2. Les injections</h3>
-    <p> Une application est sensible aux injections lorsque les données fournies par l'utilisateur ne sont pas validés ou nettoyer avant leur traitement.
+    <p> Une application est sensible aux injections lorsque les données fournies par l'utilisateur ne sont pas validées ou nettoyées avant leur traitement.
     <p>Bien que la plus populaire soit l'injection SQL, ces failles se produisent lorsque des données non fiables sont envoyées à un interprète. </p>
     <p>L'objectif du pirate est de faire en sorte que l'application est un comportement qui ne corresponde pas à son rôle. </p>
     <p>Comme prévention, il faut toujours vérifier les données entrer par un utilisateur et protéger les caractères spéciaux.</p>
 
     <h3>3. Contrôle d’accès défectueux</h3>
     <p>Mécanisme qui permet de vérifier qu'un utilisateur accède uniquement à certaines ressourcess. Il empêche un utilisateur d'avoir accès à celui d'autrui car les conséquences peuvent être graves (divulgation d'informations privées, vol d'identité...). <br></p>
-    <p>Pour éviter cela, il serait préférable de mettre en place quelques,éléments pour durcir le contrôle d'accès par exemple avoir un compte administratif et un autre standard pour les tâches quotidiennes. <br></p>
-    <p>Aussi, sauvegarder dans les fichiers journaux les évènements de contrôle d'accès qui peuvent aider en cas de cyberattaque ; appliquer le principe du moindre privilège : les utilisateurs ou programmes ont des accès basique; et si possible utiliser le scanner OWASP ZAP qui permet de détecter les failles. </p>
+    <p>Pour éviter cela, il serait préférable de mettre en place quelques,éléments pour durcir le contrôle d'accès par exemple avoir un compte administratif et un autre standard pour les tâches quotidiennes. Aussi, sauvegarder dans les fichiers journaux les évènements de contrôle d'accès qui peuvent aider en cas de cyberattaque ; appliquer le principe du moindre privilège : les utilisateurs ou programmes ont des accès basique; et si possible utiliser le scanner OWASP ZAP qui permet de détecter les failles. </p>
 
-   <h3>>4. Le manque d'intégrité des données et des logiciels</h3>
-    <p></p>
+   <h3>4. Le manque d'intégrité des données et des logiciels</h3>
+    <p> Cette défaillance peut modifier ou supprimer des données de manière non autorisée et ainsi perturbées la sérialisation, qui est procédé qui consiste à prendre les objets dans le code de l'application et à les convertir dans un format qui est utilisé par la suite ; et la désérialisation qui consite à reconvertir les données séréalisées en objets utilisables par une application (exemple sauvegarde dans les jeux vidéos)</p>
+    <p>Pour éviter cela, toujours vérifier l'intégité des fichiers avant d'effectuer une mise à jour, utiliser un cryptage pour protéger les données sensibles en transcrit et au repos et enfin éviter la séréalisation des données provenant des sources non fiables.</p>
 
    <h3>5. Mauvaise configuration de la sécurité</h3> 
-    <p>Elles sont nombreuses : messages d'erreurs, utilisation des mots de passes sur les équipements; l'utilisation des fichiers xml sans vérifier le contenu;le traitement des fichiers xml sans vérification de contenu sur une application via le serveur peut permettre au pirate d'injecter du code qui va faire que le fichier déposer sur le serveur va retourner certaines informations qui vont le permettre de détourner le fonctionnement de l'application. On a aussi  l'activation des fonctionnalités non utilisées comme par exemple laisser des port 80 et 21 activés. </p>
+    <p>Elles sont nombreuses : messages d'erreurs, utilisation des mots de passes sur les équipements; l'utilisation des fichiers xml sans vérifier le contenu;le traitement des fichiers xml sans vérification de contenu sur une application via le serveur peut permettre au pirate d'injecter du code qui va faire que le fichier déposer sur le serveur va retourner certaines informations qui vont le permettre de détourner le fonctionnement de l'application. On a aussi l'activation des fonctionnalités non utilisées comme par exemple laisser des port 80 et 21 activés. </p>
     <p>Comme prévention, désactiver les services non utilisés avant les procédures de durcissement des systèmes d'exploitations</p>
 
     <h3>6.Les échecs cryptographiques et exposition de données sensibles</h3>
@@ -59,16 +70,22 @@
 
     <h3>9.Falsification des requêtes côté serveur</h3>
     <p>Elle permet au pirate de forcer l'application à effectuer des requêtes vers un domaine ou serveur spécifique.  </p>
+    <p>Comme prévention, il faut journaliser le trafic, implémenter un ensemble d'action, vérifier les informations envoyer par l'utilisateur et utiliser une liste blanche qui contiendra les protocoles et adresses IP autorisés</p>
 
     <h3>10. Identification et authentification de mauvaise qualité</h3>
     <p>La mauvaise gestion des identifications et des authentifications des utilisateurs constitue un danger pour un système d'information comme par exemple une application qui ne bloque pas pendant un certains temps les utilisateurs qui échouent plusieurs fois à l'authentification est une porte ouverte aux pirates pour utiliser "l'attaque par force brute". <br></p>
     <p>Le mieux à faire est de changer le mot de passe par défaut ; journaliser les tentatives d'authentification et mettre en place un temporisateur après la succession d'authentification échouer.</p>
+     
 
-    <p>Aujourdh'hui, le piratage de bases de données est de moins en moins touché. Contrairement aux API,</p>
-    <p>Les applications des grandes sociétés (Chrome, Google, Amazon) sont des principales cibles des ransomwares et des Man In The Middle (MITM); Gmail, avec plus de 2,5 milliars d'utilisateurs actifs,  </p>
+    <h3>Comment est maintenue l'infrastructure de Google? </h3><strong>Source :</strong>Chatgpt
+    <p>Google maintient sa sécurité en utilisant une combinaison avancée de technologies, de processus robustes.l'entreprise adopte une approche proactive et multi-niveaux pour protéger ses systèmes. Voici les principales mesures mises en oeuvres par google.</p>
+    <p>-Google met en œuvre des mises à jour de sécurité régulières pour ses systèmes, ses logiciels et ses services. Ces mises à jour corrigent les vulnérabilités découvertes et renforcent la défense contre de nouvelles menaces. En cas de découverte de failles de sécurité majeures, Google déploie rapidement des patchs pour résoudre le problème.</p>
+    <p>-Gmail utilise des algorithmes avancés pour bloquer automatiquement les attaques de phishing et de spam avec un taux de détection supérieur à 99,9%.</p>
+    <p>-Google applique des correctifs de sécurité de manière proactive et automatique pour ses services et systèmes, réduisant la fenêtre de vulnérabilité.</p>
+    <p>-Le project zero est une équipe de l'entreprise qui est dédié à la découverte des failles de logiciels et tous les employés de l'entreprise, ingénieurs ou non, reçoivent une formation approfondie sur la sécurité pour diminuer le taux d'intruision.</p>
      
     <li>
-        <a href="Formulaire de contact.html"> Formulaire de contact</a>
+        <button><a href="Formulaire de contact.html"> Formulaire de contact</a> </button>
         </li>   
     
 

@@ -7,13 +7,66 @@
 
 body {
     height: 100vh;
-    background: no-repeat / cover url(./Gohan2.jpg);
+    background: no-repeat / cover url(https://www.futura-sciences.com/sciences/actualites/magazine-science-10-technologies-2020-vont-changer-monde-6166/);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
 }
 nav {
-    height: 80px;
+    height: 100px;
     width: 100%;
     background: rgba(0,0,0,4);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+nav img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+
+}
+nav ul {
+     margin-right: 50px; /*marge de 50px: c'est à dire tout les éléments seront espacés de 50px */
+    list-style:none;
+}
+nav ul li {
+    display: inline-block;
+    line-height:80px;
+    margin: 0 20px;
+}
+nav ul li a {
+    /* text-decoration: none; enlève les boutons radio des éléments créer par la balise "li"  */
+    color: #fff;
+    padding: 20px;
+}
+nav ul li a.active, nav ul li a:hover {
+    background: rgb(126, 119, 119); /* couleur qui s'affiche lorsqu'on veut cliquer sur l'un des liens  */
+    border-radius: 20px;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content h1 {
+    color:blue ;
+    font-weight: 900;
+    font-size: clamp(100px, 5vw, 100px);
+    text-align: center
+}
+
+   
+       
+    .content1 h2 {
+        color: blanchedalmond;
+        font-weight: 500;
+        font-size: clamp(75px, 3vw, 75px);
+        text-align: center
+}
+img {
+    height: 1000px;
+    width: 1000px;
+    display: block;
+    margin: auto;
 }

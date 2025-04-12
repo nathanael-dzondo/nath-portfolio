@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=di, initial-scale=1.0">
     <title>Formulaire de contact</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- icone de l'onglet -->
     <link rel="shortcut icon" href="./image.png">
 
         <style>
+            *{
+                margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+            }
             body {
                 background-color: grey;
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 20px;
+                display: flex;
+                justify-content: center;
+                background: url("img.jpg") no-repeat;
+                background-position: center;
             }
             form {
                 max-width: 400px;
@@ -38,8 +48,8 @@
             }
             button {
                 padding: 10px 15px;
-                background-color: paleturquoise;
-                color: green;
+                background-color: orange;
+                color: black;
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
@@ -47,11 +57,16 @@
             button:hover {
                 background-color: paleturquoise;
             }
+            .h1 h1{
+        font-size: 36px;
+        text-align: center;
+    }
         </style>
 </head>
 <body>
-
+    <div class="h1">
     <h1>Contact</h1>
+</div>
     
     <form action="https://api.web3forms.com/submit" method="POST">
         
@@ -78,3 +93,101 @@
     
 </body>
 </html>
+<!-- <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Popins", sans-serif;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: seagreen;
+        background: url("img.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .rapper{
+        width: 420px;
+        background: transparent;
+        color: purple;
+    }
+    .h1 h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    .rapper .input{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: salmon;
+        margin: 30px 0;
+    }
+    .input input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255,255,255, .2);
+        border-radius: 40px;
+        font-size: 17px;
+        color: #fff;
+        padding: 20px 45px 20px 20px;
+    }
+    .input input::placeholder{
+        color: #fff;
+    }
+    .input i{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+    .rapper .btn{
+        width: 100%;
+        height: 40px;
+        border-radius: 40px;
+        border: none;
+        outline: none;
+    }
+
+</style>
+</head>
+<body>
+    <div class="rapper">
+        <form action="">
+            <h1>Formulaire</h1>
+            <div class="input">
+
+                <input type="text" placeholder="Saisissez votre nom" required>
+                <i class="bx bxs-user"></i><br><br>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Saisissez votre email" required>
+                <i class='bx bxl-gmail' ></i><br><br>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Saisissez votre numéro" required>
+                <i class='bx bxs-phone' ></i>
+
+            </div>
+            <div class="remember">
+                <label for=""><input type="checkbox"> Me rappeler</label>
+                <a href="#">Mot de passe oublier</a>
+
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+            <div class="register-link">
+              
+            </div>
+            
+        </form>
+
+    </div>
+</body> -->

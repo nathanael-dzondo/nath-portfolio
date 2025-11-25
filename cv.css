@@ -1,0 +1,17 @@
+ button {
+                padding: 10px 15px;
+                background-color: rgb(100, 100, 100);
+                color: green;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            body{
+                background: rgba(35, 118, 227, 0.569);
+            }
+            button:hover {
+                background-color: paleturquoise;
+            }
+            embed {
+                margin-left: 200px;
+            }

@@ -1,0 +1,92 @@
+/* Reset propre */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   GLOBAL
+========================== */
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);   /* Fond sombre */
+    color: #f5f5f5;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+nav {
+    height: 100px;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #00aaff;
+    border-radius: 20px;
+}
+
+/* ==========================
+   CONTENU PRINCIPAL
+========================== */
+.content {
+    text-align: center;
+    margin-top: 10px; /* évite le position absolute */
+}
+
+.content h2 {
+    color: #00aaff;
+    font-weight: 800;
+    font-size: clamp(40px, 6vw, 90px);
+}
+
+/* ==========================
+   SOUS-TITRES
+========================== */
+.content1 h3 {
+    color: #ddd;
+    font-weight: 500;
+    font-size: clamp(30px, 4vw, 75px);
+}
+
+/* ==========================
+   IMAGES GLOBALES
+========================== */
+.content img {
+    height: 400px;
+    width: 1000px;
+    display: block;
+    margin: auto;
+    max-width: 100%;  /* responsive */
+    object-fit: contain;
+}

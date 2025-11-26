@@ -5,17 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
      <!-- icone de l'onglet -->
-     <link rel="shortcut icon" href="./image.png">
+     <link rel="shortcut icon" href="./Image/image.png">
      <link rel="stylesheet" href="./cv.css">
      
 </head>
-<body> 
-    
-     
-    <embed src="./Image/Nouveau cv de Anthony DZONDO.pdf" width="800px" height="700px" type="application/pdf" >
-        <li>
-           <button> <a href="Experience professionnelle.html"> Experience professionnelle</a> </button>
-        </li> 
-        <a href="./Image/Nouveau cv de Anthony DZONDO.pdf" download="Cv de Anthony DZONDO">télécharger l'image</a> 
+<body>
+
+    <div class="container">
+        <h1>Mon Curriculum Vitae</h1>
+
+        <!-- Aperçu PDF -->
+        <embed 
+            src="./Image/Nouveau cv de Anthony DZONDO..pdf" 
+            type="application/pdf" 
+            class="pdf-viewer"
+        >
+
+        <!-- Actions -->
+        <div class="actions">
+            <a href="Experience-professionnelle.html" class="btn">
+                💼 Expérience professionnelle
+            </a>
+
+            <a 
+                href="./Image/Nouveau cv de Anthony DZONDO..pdf" 
+                download="CV_Anthony_DZONDO.pdf"
+                class="btn secondary"
+            >
+                ⬇ Télécharger le CV
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>

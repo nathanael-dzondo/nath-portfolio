@@ -3,67 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- titre de la page -->
-    <title>Port Folio de Anthony DZONDO</title>
-    <!-- icone de l'onglet -->
+
+    <title>Portfolio – Anthony DZONDO</title>
     <link rel="shortcut icon" href="./image.png">
-     <style>
-            body {
-                background: #6b6b6b;
-                color: #f5f5f5;
-                border: 30px;
-                border-color: aqua;
-                border-radius: 30px;
-                font-family: Arial, sans-serif;
+
+    <style>
+        /* RESET SIMPLE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1f2933, #111827);
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        /* CONTENEUR CENTRAL */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #1f2937;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #22d3ee;
+        }
+
+        h2 {
+            margin-top: 35px;
+            margin-bottom: 10px;
+            color: #38bdf8;
+            border-left: 4px solid #22d3ee;
+            padding-left: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        strong {
+            color: #facc15;
+        }
+
+        /* BOUTON */
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: linear-gradient(135deg, #22d3ee, #3b82f6);
+            color: #111827;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 20px rgba(34, 211, 238, 0.35);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(34, 211, 238, 0.55);
+        }
+
+        /* ALIGNEMENT BOUTON */
+        .btn-container {
+            text-align: center;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
             }
-            button {
-                padding: 10px 15px;
-                background-color: rgb(100, 100, 100);
-                color: green;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-            button:hover {
-                background-color: paleturquoise;
-            }
+
             h1 {
-               text-align: center; 
+                font-size: 2rem;
             }
-            h2 {
-                text-align: center;
-            }
-     </style>
+        }
+
+    </style>
 </head>
-    <body>
-       <h1>Accueil</h1>
 
+<body>
 
-        <p>Je me nomme Anthony Nathanaël DZONDO, étudiant en BTS SIO (Service Informatique aux Organisations) au lycée Dampierre. Je suis originaire du Congo-Brazzaville où j'ai passé 18 ans de ma vie. Je suis titulaire d'un bac Général série C(Mathématiques Physique), je suis un passionné de programmation. J’ai développé cette passion en cotoyant le groupe d'ami de mon frère ainé qui évoluait dans l'informatique, et c'est de la que j'ai aussi pris goût. Bien que contrairement à mon frère et ses amis je n’ai pas de bases en informatique car mon parcours scolaire n’était en aucun cas lier à de l’informatique, c’est après l’obtention de mon bac que je me suis lancé en commençant d’abord par perfectionner mes bases en Anglais et lire quelques livres sur les algorithmes. C’est finalement à Dampierre que mon parcours d’informaticien commence.</p>
+    <div class="container">
+        <h1>Accueil</h1>
 
+        <p>
+            Je me nomme <strong>Anthony Nathanaël DZONDO</strong>, étudiant en BTS SIO
+            (Service Informatique aux Organisations) au lycée Dampierre. Je suis originaire
+            du Congo-Brazzaville où j'ai passé 18 ans de ma vie. Titulaire d’un bac général
+            série C (Mathématiques – Physique), je suis passionné par la programmation.
+            C’est en côtoyant le groupe d’amis de mon frère aîné évoluant dans
+            l’informatique que cette passion est née.
+        </p>
+
+        <p>
+            N’ayant pas de bases initiales en informatique, mon parcours scolaire n’y étant
+            pas lié, j’ai commencé après l’obtention de mon bac par renforcer mon niveau en
+            anglais et lire des ouvrages sur les algorithmes. C’est finalement à Dampierre
+            que mon parcours d’informaticien a réellement commencé.
+        </p>
 
         <h2>Projet professionnel</h2>
-        <p>La première étape de mon parcours consiste à obtenir le BTS SIO. Au cours de ses 2 ans d'apprentissage, mon objectif sera de savoir développer, concevoir et maintenir des applications et logiciels. En outre, la maitrise des langages informatiques, le développement web, la gestion des bases de données et la détection & correction des bugs seront des compétences que je devrais acquérir pour me fortifier et continuer mon parcours.</p>  
 
-        <p> Après le BTS, je compte faire une licence informatique parcours "Développement et Sécurité des Logiciels" pour approfondir mes bases et acquérir des compétences demandées dans ce secteur en forte croissance.</p>
+        <p>
+            La première étape de mon parcours est l’obtention du BTS SIO. Durant ces deux
+            années, mon objectif est de savoir développer, concevoir et maintenir des
+            applications et logiciels. La maîtrise des langages informatiques, le
+            développement web, la gestion de bases de données et la correction des bugs
+            seront des compétences clés à acquérir.
+        </p>
 
-        <p>Et pour finir en beauté, j'opterai pour une école d'ingénieur avec alternance pour avoir un avant goût du monde professionnel et connaître les besoins des entreprises en matière de sécurité logiciel.  </p>
+        <p>
+            Après le BTS, je souhaite poursuivre avec une licence informatique, parcours
+            « Développement et Sécurité des Logiciels », afin de renforcer mes bases et
+            répondre aux exigences d’un secteur en forte croissance.
+        </p>
 
-        <p>De ce fait, mon objectif final sera de devenir "Ingénieur en cybersécurité", ce métier me permettra d'acquérir des compétences comme l'adaptabilité, la gestion des projets et la collaboration en équipe</p>
+        <p>
+            Enfin, je souhaite intégrer une école d’ingénieur en alternance afin d’acquérir
+            une expérience professionnelle concrète et mieux comprendre les besoins des
+            entreprises en matière de sécurité logicielle.
+        </p>
 
-        <h2>Présentation du BTS</h2>
-        <p> <strong>Le BTS SIO (Service Informatique aux Organisation)</strong> est un diplôme post bac (Bac + 2), il apporte des compétences à la mise à disposition de service informatiques ainsi qu’en cybersécurité et met en avant l’autonomie et le développement personnel. Le BTS SIO, comporte deux options à savoir le <strong>SLAM</strong> et le <strong>SISR.</strong></p>
+        <p>
+            Mon objectif final est de devenir <strong>ingénieur en cybersécurité</strong>,
+            un métier nécessitant rigueur, adaptabilité, esprit d’analyse et travail en
+            équipe.
+        </p>
 
-        <p><strong>Le SLAM</strong>, qui signifie Solutions Logiciels et Appliction Métier, est une filière qui met l'acent sur la conception et le développement d'application, la maintenance de système informatique et de cybersécurité. Il permet de développer des logiciels personnalisés réppondant à des besoins spécifiques.</p>
+        <h2>Présentation du BTS SIO</h2>
 
-        <p>Le <strong>SISR</strong>, qui signifie Solutions d'Infrastructure Système et Réseau, est une option qui forme dans la polyvalence des réseaux; notamment d'adapter les solutions d'infrastructure, d'assurer le bon fonctionnement des équipements réseau, leur conception et leur déploiement.</p>
+        <p>
+            Le <strong>BTS SIO (Services Informatiques aux Organisations)</strong> est un
+            diplôme post-bac (Bac +2) orienté vers la fourniture de services informatiques
+            et la cybersécurité. Il propose deux options : <strong>SLAM</strong> et
+            <strong>SISR</strong>.
+        </p>
 
-        <p>Pour moi, des deux branches évoquées ci-dessus, je compte me pencher pour le SLAM. Tout d'abord parce que le développement est de loin le coté de l'informatique qui me passionne le plus du fait qu'un développeur est quelqu'un de curieux, autonome, patient, rigoureux et surtout de tenace. De plus, je cultive ces qualités depuis longtemps car j'ai toujours travaillé acharnement pour arriver où j'en suis et bien que le développement logiciel soit un domaine exigeant, je suis prêt à relever les défis qu’il présente et à persévérer face aux obstacles.</p>
-       
-        <li>
-       <button> <a href="cv.html">  Mon Cv </a> </button>
-        </li>
-        
+        <p>
+            L’option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers)
+            est centrée sur la conception, le développement et la maintenance
+            d’applications.
+        </p>
 
-    </body>
+        <p>
+            L’option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et
+            Réseaux) forme à l’administration des réseaux, à leur sécurité et à la gestion
+            des infrastructures.
+        </p>
+
+        <p>
+            Mon choix se porte sur le <strong>SLAM</strong>, car le développement est le
+            domaine qui me passionne le plus. Il demande curiosité, rigueur, patience et
+            persévérance, des qualités que je cultive depuis longtemps.
+        </p>
+
+        <div class="btn-container">
+            <a href="cv.html" class="btn">📄 Consulter mon CV</a>
+        </div>
+    </div>
+
+</body>
 </html>

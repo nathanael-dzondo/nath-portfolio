@@ -1,0 +1,109 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: 
+                linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)),
+                url("./Image/img.jpg")  center/cover;
+        }
+
+        .contact-card {
+            background-color: #020617;
+            padding: 35px;
+            border-radius: 18px;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid #1e293b;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #22d3ee;
+            margin-bottom: 25px;
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #cbd5f5;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            background-color: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 10px;
+            padding: 10px 12px;
+        }
+
+        .input-group i {
+            color: #38bdf8;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        input,
+        textarea {
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 0.95rem;
+            color: #e5e7eb;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #64748b;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 14px;
+            background: linear-gradient(135deg, #22d3ee, #3b82f6);
+            color: #020617;
+            font-weight: bold;
+            font-size: 1rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 25px rgba(34, 211, 238, 0.4);
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(34, 211, 238, 0.6);
+        }
+
+        @media (max-width: 480px) {
+            .contact-card {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }

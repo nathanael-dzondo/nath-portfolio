@@ -1,0 +1,54 @@
+🟢 Étape 1 : Créer un dépôt sur GitHub
+
+Va sur github.com
+
+Clique sur New repository
+
+Donne un nom au dépôt (ex : portfolio)
+
+Laisse Public (ou Private si tu veux)
+
+❌ Ne coche PAS Initialize with README
+
+Clique sur Create repository
+
+➡️ GitHub te donne une URL du type :
+
+https://github.com/username/portfolio.git
+
+🟢 Étape 2 : Initialiser Git dans ton projet
+
+Dans le dossier de ton projet :
+
+cd chemin/vers/ton/projet
+git init
+
+🟢 Étape 3 : Vérifier l’état des fichiers
+git status
+
+🟢 Étape 4 : Ajouter les fichiers au suivi Git
+git add .
+
+
+✅ le . signifie « tous les fichiers »
+
+🟢 Étape 5 : Créer le premier commit
+git commit -m "Initialisation du projet"
+
+🟢 Étape 6 : Lier le dépôt local à GitHub
+
+(remplace username et portfolio)
+
+git remote add origin https://github.com/username/portfolio.git
+
+
+Vérification :
+
+git remote -v
+
+🟢 Étape 7 : Envoyer le projet sur GitHub
+git branch -M main
+git push -u origin main
+
+
+✅ Ton projet est maintenant en ligne sur GitHub 🎉

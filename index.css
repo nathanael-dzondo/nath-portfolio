@@ -1,92 +1,167 @@
-/* Reset propre */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 /* ==========================
-   GLOBAL
+   BODY
 ========================== */
 body {
-    background: linear-gradient(135deg, #0f172a, #020617);   /* Fond sombre */
-    color: #f5f5f5;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #f8fafc;
 }
 
 /* ==========================
-   NAVIGATION
+   NAVBAR
 ========================== */
 nav {
-    height: 100px;
+    height: 90px;
     width: 100%;
-    background: rgba(0,0,0,0.85);
+    background: rgba(2, 6, 23, 0.95);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
 
 nav img {
-    width: 150px;
-    height: 100px;
-    margin-left: 50px;
+    height: 65px;
+    transition: transform 0.3s ease;
 }
 
+nav img:hover {
+    transform: scale(1.08);
+}
+
+/* ==========================
+   MENU
+========================== */
 nav ul {
     list-style: none;
-    margin-right: 50px;
+    display: flex;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 20px;
+    line-height: 1;
 }
 
 nav ul li a {
-    color: #fff;
-    padding: 20px;
+    color: #e5e7eb;
+    padding: 12px 18px;
+    border-radius: 30px;
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background: #00aaff;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #22d3ee, #3b82f6);
+    color: #020617;
+    box-shadow: 0 10px 25px rgba(34, 211, 238, 0.5);
 }
 
 /* ==========================
-   CONTENU PRINCIPAL
+   HEADER CONTENT
 ========================== */
 .content {
     text-align: center;
-    margin-top: 10px; /* évite le position absolute */
+    margin: 80px auto 40px;
+    padding: 0 20px;
 }
 
 .content h2 {
-    color: #00aaff;
     font-weight: 800;
-    font-size: clamp(40px, 6vw, 90px);
+    text-transform: uppercase;
+    font-size: clamp(36px, 6vw, 90px);
+    background: linear-gradient(135deg, #22d3ee, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
 }
 
 /* ==========================
-   SOUS-TITRES
-========================== */
-.content1 h3 {
-    color: #ddd;
-    font-weight: 500;
-    font-size: clamp(30px, 4vw, 75px);
-}
-
-/* ==========================
-   IMAGES GLOBALES
+   IMAGE
 ========================== */
 .content img {
-    height: 400px;
-    width: 1000px;
-    display: block;
-    margin: auto;
-    max-width: 100%;  /* responsive */
-    object-fit: contain;
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+}
+
+.content img:hover {
+    transform: scale(1.03);
+}
+
+/* MENU BURGER */
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #22d3ee;
+}
+
+@media (max-width: 900px) {
+    nav ul {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background: rgba(2, 6, 23, 0.98);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    nav ul.show {
+        max-height: 400px;
+    }
+
+    nav ul li {
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background: #020617;
+    border-top: 2px solid #22d3ee;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 120px;
+    color: #9ca3af;
+    font-size: 14px;
 }

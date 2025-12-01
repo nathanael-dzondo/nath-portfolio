@@ -12,33 +12,50 @@
   </head>
 <body>
     <div class="container">
+
+        <!-- NAVBAR -->
         <nav>
-           <img src="./Image/image.png" alt=""> 
-            <ul>
-               <li>
-            <a href="Accueil.html">Accueil</a>
-        </li>
-               <li>
-                <a href="cv.html">Cv</a>
-               </li>
-               <li>
-                <a href="Experience professionnelle.html">Experience professionnelle</a>
-               </li>
-               <li>
-                <a href="Veille technologique.html">Veille technologique</a>
-               
-                </li>
-               <li>
-                <a href="Formulaire de contact.html">Formulaire de contact</a>
-            </li>
+            <img src="./Image/image.png" alt="Logo">
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <ul id="nav-menu">
+                <li><a href="Accueil.html" >🏠Accueil</a></li>
+                <li><a href="cv.html">📄CV</a></li>
+                <li><a href="Experience-professionnelle.html">💼Expérience</a></li>
+                <li><a href="Veille technologique.html">📨Veille</a></li>
+                <li><a href="Formulaire de contact.html">📜Contact</a></li>
             </ul>
         </nav>
-        <div class="content">   
-            <h2>Mon PortFolio </h2>          
-           
-<img src="Image/bts-sio-sisr-contexte-professionnel.png" alt="" height="50px" width="50px">
-       
+
+        <!-- CONTENU -->
+        <div class="content fade-in">
+            <h2>Mon Portfolio</h2>
+            <img src="Image/bts-sio-sisr-contexte-professionnel.png" alt="">
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 — Anthony DZONDO | BTS SIO SLAM</p>
+        <p>Portfolio personnel | Cybersécurité & Développement</p>
+    </footer>
+
+    <!-- SCRIPT MENU BURGER -->
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("nav-menu");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+    </script>
 
 </body>
+
+
 
 </html>

@@ -113,6 +113,22 @@
             transform: translateY(-3px);
             box-shadow: 0 12px 30px rgba(34, 211, 238, 0.6);
         }
+       .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #1f2937;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+        .pdf-viewer {
+    width: 70%;
+    height: 500px;
+    border: none;
+    position: relative;
+}
+
 
         /* RESPONSIVE */
         @media (max-width: 1024px) {

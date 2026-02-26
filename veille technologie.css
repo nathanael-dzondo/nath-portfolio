@@ -55,6 +55,11 @@
             color: #22d3ee;
             padding-left: 5px;
         }
+        a {
+            color: #22d3ee;
+            text-decoration: none;
+            transition: 0.3s;
+        }
 
         /* CONTENU DROIT */
         .content {

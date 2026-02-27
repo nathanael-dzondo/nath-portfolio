@@ -6,96 +6,27 @@
 
     <title>Portfolio – Anthony DZONDO</title>
     <link rel="shortcut icon" href="./image.png">
-
-    <style>
-        /* RESET SIMPLE */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: linear-gradient(135deg, #1f2933, #111827);
-            font-family: "Segoe UI", Arial, sans-serif;
-            color: #e5e7eb;
-            line-height: 1.7;
-        }
-
-        /* CONTENEUR CENTRAL */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: #1f2937;
-            padding: 35px;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #22d3ee;
-        }
-
-        h2 {
-            margin-top: 35px;
-            margin-bottom: 10px;
-            color: #38bdf8;
-            border-left: 4px solid #22d3ee;
-            padding-left: 10px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        strong {
-            color: #facc15;
-        }
-
-        /* BOUTON */
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 28px;
-            background: linear-gradient(135deg, #22d3ee, #3b82f6);
-            color: #111827;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: 0.3s ease;
-            box-shadow: 0 8px 20px rgba(34, 211, 238, 0.35);
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(34, 211, 238, 0.55);
-        }
-
-        /* ALIGNEMENT BOUTON */
-        .btn-container {
-            text-align: center;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-                padding: 25px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="./Accueil.css">
+  
 </head>
 
 <body>
+     <nav>
+            <img src="./Image/image.png" alt="Logo">
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <ul id="nav-menu">
+                <li><a href="Accueil.html" >🏠Accueil</a></li>
+                <li><a href="cv.html">📄CV</a></li>
+                <li><a href="Experience-professionnelle.html">💼Expérience</a></li>
+                <li><a href="Veille technologique.html">📨Veille</a></li>
+                <li><a href="Formulaire de contact.html">📜Contact</a></li>
+            </ul>
+        </nav>
+
 
     <div class="container">
         <h1>Accueil</h1>
